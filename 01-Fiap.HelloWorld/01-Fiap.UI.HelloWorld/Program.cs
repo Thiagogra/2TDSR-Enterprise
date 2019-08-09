@@ -11,6 +11,7 @@ namespace _01_Fiap.UI.HelloWorld
             PessoaFisica pf = new PessoaFisica();
             //Atribuir um valor para o nome
             pf.Nome = "Aula 01";
+            pf.Status = EstadoCivil.Casado;
             //Exibir o valor do nome
             Console.WriteLine(pf.Nome);
 
@@ -20,6 +21,7 @@ namespace _01_Fiap.UI.HelloWorld
                 Nome = "Teste",
                 Rg = "13131313-5"
             };
+
         }
     }
 }

@@ -4,8 +4,17 @@ using System.Text;
 
 namespace _01_Fiap.UI.HelloWorld.Model
 {
-    class Pessoa
+    abstract class Pessoa
     {
+        //Métodos
+        public abstract void Comer();
+
+        //virtual -> permite a sobrescrita do método
+        public virtual void Respirar()
+        {
+            Console.WriteLine("Respirando..");
+        }
+
         public Pessoa(string nome)
         {
             this.Nome = nome;
